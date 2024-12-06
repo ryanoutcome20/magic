@@ -1,13 +1,14 @@
 # magic
 [![Build Status](https://www.travis-ci.org/auth0/magic.svg?branch=master)](https://travis-ci.org/auth0/magic)
 
-**This repo is deprecated. It will be archived and eventually deleted.**
-
 `magic` is a lightweight wrapper around the `crypto` interface to OpenSSL and the `libsodium` library which provides a standard cryptography API for internal use, consistent with best current practices recommended by the product security team at Auth0. Named not for what it is intended to do, but for [what it is intended to prevent](https://en.wikipedia.org/wiki/Magic_(cryptography)).
 
 All public functions support both callbacks and promises (and therefore async/await), allowing easy integration into any preexisting codebase. All constructions requiring secret keys will generate them as necessary if they are not supplied, and return them for future use.
 
 Supported Node versions: >= 12
+
+## Note
+This is a fork of the original repository located [here](https://github.com/auth0/magic/tree/master). This repository is meant to replace the other repository for archival purposes when it eventually gets deleted.
 
 ## Why use magic
 Most libraries offering a cryptography toolkit allow for a variety of configuration. Usually the reasoning behind this is to empower the developer to configure the cryptography functions as they like. At the same time however this requires developers to be knowledgable of what the different parameters are for and how they affect the security of the function output. Bad choices in parameters can lead to insecure cryptography with disastrous results.
